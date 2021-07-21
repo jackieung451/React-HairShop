@@ -23,7 +23,7 @@
 // export const InfoDataTwo = {
 //   heading: "MOdern Designs",
 //   paragraphOne: "lorem",
-//   paragraphTwo: "loremmmdsfadfds",
+//   paragraphTwo: "lorem",
 //   buttonLabel: "View Homes",
 //   image: ImageTwo,
 //   reverse: true,
