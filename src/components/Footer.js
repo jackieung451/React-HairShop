@@ -20,6 +20,8 @@ const Section = styled.section`
   background: #000d1a;
   color: #fff;
   width: 100%;
+  padding-top: 0;
+  margin-top: 0;
   ${
     "" /* min-height: 600px;
   padding: 3rem FaCalculator((100vw - 1300px) / 2); */
@@ -44,10 +46,10 @@ const FooterTop = styled.div`
 `;
 const Quote = styled.div`
   flex: 1;
-  padding: 2rem 0rem;
+  padding-top: 1rem;
 
   h6 {
-    font-size: clamp(2rem, 8vw, 5rem);
+    font-size: clamp(2rem, 8vw, 3rem);
     display: flex;
     justify-content: center;
   }
@@ -60,8 +62,8 @@ const Quote = styled.div`
 `;
 const FooterInfo = styled.div`
 
-    padding: 2rem;
-    max-width: 500px;  
+    padding: 1rem 0rem 2rem 0rem;
+    ${"" /* max-width: 500px;   */}
   }
   line-height: 3;
   ${
@@ -71,6 +73,7 @@ const FooterInfo = styled.div`
   
       display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   ${"" /* margin: auto;  */}
   
@@ -84,14 +87,14 @@ const FooterInfo = styled.div`
     padding: 1rem 1rem;
   }
 `;
-const FooterBottom = styled.div`
-  display: flex;
-  padding: 2rem 0rem;
+// const FooterBottom = styled.div`
+//   display: flex;
+//   padding: 2rem 0rem;
 
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-  }
-`;
+//   @media screen and (max-width: 768px) {
+//     flex-direction: column;
+//   }
+// `;
 
 // const SocialIcons = styled.div`
 //   display: flex;
@@ -177,8 +180,8 @@ const Footer = () => {
           <Link to="/homes">Canada</Link>
         </FooterInfo> */}
 
-        <FooterBottom>
-          {/* <SocialIcons>
+        {/* <FooterBottom> */}
+        {/* <SocialIcons>
             <a
               href="//www.google.com"
               rel="noopener noreferrer"
@@ -208,12 +211,12 @@ const Footer = () => {
               <LinkedIn />
             </a>
           </SocialIcons> */}
-          <Contact>
+        {/* <Contact>
             <Button to="/contact">
               Let's Chat <IoMdArrowRoundForward />
             </Button>
           </Contact>
-        </FooterBottom>
+        </FooterBottom> */}
       </Container>
     </Section>
   );

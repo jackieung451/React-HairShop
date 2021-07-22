@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Button } from "./Button";
-import ImageOne from "../images/img7.jpg";
+import ImageOne from "../images/img22.jpg";
 
 const Section = styled.section`
   background: #000d1a;
@@ -9,18 +8,11 @@ const Section = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
-  height: 100%;
-  height: 100vh;
-  max-height: 1100px;
-  overflow: hidden;
 `;
 
 const Container = styled.div`
   background: #fff;
-  padding: 5rem 2rem;
-  width: 100%;
-  height: 100%;
+  padding: 3rem 2rem;
   position: relative;
 `;
 
@@ -34,7 +26,13 @@ const ColumnLeft = styled.div`
   margin: 0px -15px;
   justify-content: flex-start;
   padding: 1rem;
-  margin-bottom: 90px;
+
+  @media screen and (max-width: 768px) {
+    iframe {
+      min-width: 200px;
+      max-width: 1020px;
+    }
+  }
 `;
 
 const Content = styled.div`
@@ -48,41 +46,29 @@ const Content = styled.div`
   }
 
   h1 {
-    margin-bottom: 2rem;
+    ${"" /* margin-bottom: 2rem; */}
     font-size: 2 rem;
     display: flex;
-
-    justify-content: center;
+    justify-content: flex-start;
   }
 
-  ul {
+  p {
     margin-bottom: 1rem;
     line-height: 1.5;
-    font-weight: 400px;
-    padding: 0rem 12rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
   }
   h2 {
     display: flex;
     justify-content: center;
   }
-  div {
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-  }
 `;
 const ColumnRight = styled.div`
   position: absolute;
   top: 0px;
-  right: 0;
+  right: 0px;
   max-width: 850px;
   height: 100%;
   width: 45%;
   padding-left: 1rem;
-  margin-bottom: 90px;
 
   @media screen and (max-width: 768px) {
     height: 320px;
@@ -96,36 +82,42 @@ const Image = styled.img`
   height: 100%;
   width: 100%;
   object-fit: cover;
+  @media screen and (max-width: 768px) {
+    ${"" /* flex: 0 0 100%; */}
+    max-width: 100%;
+
+    margin-top: 60px;
+    padding-bottom: 40px;
+  }
 `;
 
-const Features = () => {
+const ContactUs = () => {
   return (
     <Section>
       <Container>
         <Wrap>
           <ColumnLeft>
             <Content>
-              <h1>Our Services</h1>
-              <ul>
-                <li>Make Up</li>
-                <li>Hair Dye</li>
-                <li>Hair Cuts</li>
-                <li>Hair Style</li>
-                <li>Permanent</li>
-                <li>Comb Over</li>
-                <li>Permanent Straightening Wax</li>
-                <li>Low Taper</li>
-                <li>High Taper</li>
-                <li>Under Cut</li>
-                <li>Mid Fade Pompadour</li>
-                <div>
-                  <Button to="/contact-us">Call Now</Button>
-                </div>
-              </ul>
+              <h1>Make an Appointment</h1>
+              <p>Noel's Hair Salon</p>
+              <p>2928 N Broadway</p>
+              <p>Los Angeles, CA 90031</p>
+              <p>Phone: 323-640-0720</p>
             </Content>
+            <br />
+            <br />
+            <br />
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52882.89438490749!2d-118.23462349586569!3d34.064876692631266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7a1cd7c44cd%3A0x1665fafbd23bd4ff!2sNoel&#39;s%20Hair%20Salon!5e0!3m2!1sen!2sus!4v1626927950271!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style={{ border: 0 }}
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
           </ColumnLeft>
           <ColumnRight>
-            <Image src={ImageOne} />
+            <Image src={ImageOne} alt="recruiting" />
           </ColumnRight>
         </Wrap>
       </Container>
@@ -133,4 +125,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default ContactUs;
