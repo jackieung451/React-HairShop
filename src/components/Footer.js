@@ -3,6 +3,12 @@ import styled, { css } from "styled-components/macro";
 import { Link } from "react-router-dom";
 import { Button } from "./Button";
 import { IoMdArrowRoundForward } from "react-icons/io";
+import LogoOne from "../images/PaulMitch.jpg";
+import LogoTwo from "../images/Redken.jpg";
+import LogoThree from "../images/Italy.jpg";
+import LogoFour from "../images/JohnnyBLogo.jpg";
+import LogoFive from "../images/AmCrew.jpg";
+import LogoSix from "../images/joico2.jpg";
 // import {
 //   FaInstagram,
 //   FaFacebookF,
@@ -65,8 +71,8 @@ const FooterInfo = styled.div`
   
       display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: auto; */
+  justify-content: center;
+  ${"" /* margin: auto;  */}
   
 
   a {
@@ -128,6 +134,22 @@ const Contact = styled.div`
   }
 `;
 
+const Image = styled.img`
+  ${"" /* display: grid; */}
+  ${"" /* flex-direction: row; */}
+  justify-content: center;
+  padding: 0rem 0rem;
+  ${
+    "" /* width: 100%;
+  height: 100%; */
+  }
+  ${
+    "" /* max-width: 600px;
+  max-height: 400px; */
+  }
+  ${"" /* object-fit: cover; */}
+`;
+
 const Footer = () => {
   return (
     <Section>
@@ -135,15 +157,18 @@ const Footer = () => {
         <FooterTop>
           <Quote>
             <h6>OPEN: Monday to Sunday</h6>
+            <h6>9:00am to 7:00pm</h6>
             <p>2928 N Broadway Los Angeles, CA 90031</p>
             <p>Call Now 323.223.1059</p>
           </Quote>
         </FooterTop>
         <FooterInfo>
-          <h4>Contact Us</h4>
-          <Link to="/homes">FAQ</Link>
-          <Link to="/homes">Support</Link>
-          <Link to="/homes">Questions</Link>
+          <Image src={LogoOne} alt="logo" />
+          <Image src={LogoTwo} alt="logo" />
+          <Image src={LogoThree} alt="logo" />
+          <Image src={LogoFour} alt="logo" />
+          <Image src={LogoFive} alt="logo" />
+          <Image src={LogoSix} alt="logo" />
         </FooterInfo>
         {/* <FooterInfo>
           <h4>Offices</h4>
