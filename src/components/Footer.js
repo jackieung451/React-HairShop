@@ -46,7 +46,7 @@ const FooterTop = styled.div`
 `;
 const Quote = styled.div`
   flex: 1;
-  padding-top: 1rem;
+  padding-top: 10px;
 
   h6 {
     font-size: clamp(2rem, 8vw, 3rem);
@@ -162,7 +162,7 @@ const Footer = () => {
             <h6>OPEN: Monday to Sunday</h6>
             <h6>9:00am to 7:00pm</h6>
             <p>2928 N Broadway Los Angeles, CA 90031</p>
-            <p>Call Now 323.223.1059</p>
+            <p>Call Now 323.640.0720</p>
           </Quote>
         </FooterTop>
         <FooterInfo>

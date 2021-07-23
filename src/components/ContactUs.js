@@ -4,7 +4,7 @@ import ImageOne from "../images/img22.jpg";
 
 const Section = styled.section`
   background: #000d1a;
-  padding: 3.5rem 0rem;
+  padding: 3.5rem 0rem 0rem 0rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

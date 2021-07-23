@@ -5,7 +5,7 @@ import ImageOne from "../images/img7.jpg";
 
 const Section = styled.section`
   background: #000d1a;
-  padding: 3.5rem 0rem;
+  padding: 3.5rem 0rem 0rem 0rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,6 +14,7 @@ const Section = styled.section`
   height: 100vh;
   max-height: 1100px;
   overflow: hidden;
+  margin-bottom: 4rem;
 `;
 
 const Container = styled.div`
@@ -27,6 +28,11 @@ const Container = styled.div`
 const Wrap = styled.div`
   max-width: 1200px;
   margin: 0 auto;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 const ColumnLeft = styled.div`
   display: flex;
@@ -43,8 +49,8 @@ const Content = styled.div`
 
   @media screen and (max-width: 768px) {
     flex: 0 0 100%;
-    max-width: 100%;
-    margin-top: 250px;
+    ${"" /* max-width: 100%; */}
+    ${"" /* margin-top: 200px; */}
   }
 
   h1 {
@@ -71,7 +77,7 @@ const Content = styled.div`
   div {
     display: flex;
     justify-content: center;
-    padding: 2rem;
+    ${"" /* padding: 2rem; */}
   }
 `;
 const ColumnRight = styled.div`
@@ -82,7 +88,7 @@ const ColumnRight = styled.div`
   height: 100%;
   width: 45%;
   padding-left: 1rem;
-  margin-bottom: 90px;
+  ${"" /* margin-bottom: 90px; */}
 
   @media screen and (max-width: 768px) {
     height: 320px;
@@ -96,6 +102,13 @@ const Image = styled.img`
   height: 100%;
   width: 100%;
   object-fit: cover;
+  @media screen and (max-width: 768px) {
+    ${"" /* flex: 0 0 100%; */}
+    max-width: 100%;
+
+    margin-top: 70px;
+    padding-bottom: 40px;
+  }
 `;
 
 const Features = () => {
