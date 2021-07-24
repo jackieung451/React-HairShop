@@ -8,7 +8,7 @@ import LogoTwo from "../images/Redken.jpg";
 import LogoThree from "../images/Italy.jpg";
 import LogoFour from "../images/JohnnyBLogo.jpg";
 import LogoFive from "../images/AmCrew.jpg";
-import LogoSix from "../images/joico2.jpg";
+import LogoSix from "../images/joiartco.jpg";
 // import {
 //   FaInstagram,
 //   FaFacebookF,

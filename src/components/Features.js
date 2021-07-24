@@ -15,6 +15,27 @@ const Section = styled.section`
   max-height: 1100px;
   overflow: hidden;
   margin-bottom: 4rem;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    ${"" /* height: 190vh; */}
+    max-height: 1100px;
+    ${"" /* max-width: 100px; */}
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 160vh;
+    max-width: 400px;
+    flex-wrap: wrap;
+  }
+  @media screen and (max-width: 360px) {
+    height: 190vh;
+    max-width: 400px;
+    flex-wrap: wrap;
+  }
 `;
 
 const Container = styled.div`
@@ -22,62 +43,185 @@ const Container = styled.div`
   padding: 5rem 2rem;
   width: 100%;
   height: 100%;
-  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 800px;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    ${"" /* height: 190vh; */}
+    max-height: 1100px;
+    ${"" /* max-width: 100px; */}
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const Wrap = styled.div`
-  max-width: 1200px;
+  max-width: 500px;
+
   margin: 0 auto;
 
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    ${"" /* height: 190vh; */}
+    max-height: 1100px;
+    ${"" /* max-width: 100px; */}
+  }
   @media screen and (max-width: 768px) {
+    max-width: 1025px;
     display: flex;
     flex-direction: column;
+
+    padding-right: 0rem;
+
+    ${
+      "" /* @media screen and (max-width: 320px) {
+      padding-bottom: 8rem;
+    } */
+    }
   }
 `;
 const ColumnLeft = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  margin: 0px -15px;
-  justify-content: flex-start;
-  padding: 1rem;
-  margin-bottom: 90px;
+  flex-direction: column;
+  flex: 0 0 50%;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.4;
+  padding: 0rem 2rem 0rem 2rem;
+  ${"" /* @media screen and (max-width: 768px) { */}
+  ${"" /* padding-right: 10rem; */}
+${"" /* min-height: 1200px; */}
+${"" /* padding-bottom: 10rem; */}
+
+@media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    ${"" /* height: 190vh; */}
+    max-height: 1100px;
+    ${"" /* max-width: 100px; */}
+  }
+  @media screen and (min-width: 1024px) {
+    flex: 0 0 25%;
+  }
+  @media screen and (max-width: 768px) {
+    padding-top: 27rem;
+  }
+  @media screen and (max-width: 414px) {
+    padding-top: 16rem;
+  }
+  ${
+    "" /* @media screen and (max-width: 320px) {
+      padding-bottom: 8rem;
+    } */
+  }
 `;
 
 const Content = styled.div`
   flex: 0 0 50%;
   line-height: 1.8;
 
+  ${
+    "" /* @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: center;
+  } */
+  }
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10rem;
+    max-width: 120rem;
+    min-width: 50rem;
+  }
+
   @media screen and (max-width: 768px) {
     flex: 0 0 100%;
-    ${"" /* max-width: 100%; */}
-    ${"" /* margin-top: 200px; */}
+    margin: 14rem;
+    margin-left: 0;
+    padding: 0rem 35rem 0rem 0rem;
   }
+  ${"" /* max-width: 100%; */}
+  ${"" /* margin-top: 200px; */}
+  
 
   h1 {
     margin-bottom: 2rem;
     font-size: 2 rem;
     display: flex;
-
     justify-content: center;
+    padding-left: 10rem;
+
+    @media screen and (max-width: 768px) {
+      padding-left: 0rem;
+    }
   }
 
   ul {
     margin-bottom: 1rem;
-    line-height: 1.5;
+    line-height: 2;
     font-weight: 400px;
-    padding: 0rem 12rem;
+    padding-left: 10rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 2rem;
+
+    @media screen and (min-width: 1024px) {
+      padding-left: 20rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 0rem;
+      justify-content: center;
+    }
+    @media screen and (max-width: 320px) {
+      margin-bottom: 0rem;
+      justify-content: center;
+
+      width: 570px;
+      word-wrap: break-word;
+    }
   }
-  h2 {
+  ${
+    "" /* h2 {
     display: flex;
     justify-content: center;
+  } */
   }
   div {
     display: flex;
     justify-content: center;
-    ${"" /* padding: 2rem; */}
+    padding: 2rem 0rem;
+
+    @media screen and (min-width: 1024px) {
+      padding-right: 10rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 0rem;
+      justify-content: center;
+      padding-right: 12rem;
+      ${"" /* padding-left: 0; */}
+    }
+    @media screen and (max-width: 320px) {
+      ${"" /* height: 250vh; */}
+      margin-bottom: 70rem;
+    }
   }
 `;
 const ColumnRight = styled.div`
@@ -87,15 +231,55 @@ const ColumnRight = styled.div`
   max-width: 850px;
   height: 100%;
   width: 45%;
-  padding-left: 1rem;
+
   ${"" /* margin-bottom: 90px; */}
 
-  @media screen and (max-width: 768px) {
-    height: 320px;
-    top: -65px;
-    width: 80%;
-    margin: 0 auto;
+  ${
+    "" /* @media screen and (min-width: 1024px) {
+    grid-template-columns: 1fr;
+    ${"" /* position: relative; */
+  }
+    ${
+    "" /* justify-content: center;
+    align-items: center;
+  } */
+  } 
+  @media screen and (min-width: 1024px) {
+    position: relative;
+    flex: 0 0 75%;
+
+    ${"" /* padding-bottom: 10rem; */}
+    max-width: 140px;
+    ${"" /* height: 100px; */}
+    ${"" /* top: -65px; */}
+    ${"" /* width: 70%; */}
+    margin: 0rem auto;
     left: 0;
+    display: flex;
+    padding-left: 3rem;
+    height: 45rem;
+    max-width: 500rem;
+    min-width: 35rem;
+    ${"" /* margin-bottom: 0; */}
+    padding-bottom: 15rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 525px;
+    top: -65px;
+    width: 70%;
+    margin: 3rem auto;
+    left: 0;
+    padding-top: 1rem;
+
+    @media screen and (max-width: 414px) {
+      height: 325px;
+      margin-bottom: 0;
+    }
+    @media screen and (max-width: 280px) {
+      height: 255px;
+      margin-bottom: 0;
+    }
   }
 `;
 const Image = styled.img`
@@ -108,6 +292,9 @@ const Image = styled.img`
 
     margin-top: 70px;
     padding-bottom: 40px;
+  }
+  @media screen and (max-width: 414px) {
+    padding-bottom: 0;
   }
 `;
 

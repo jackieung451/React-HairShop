@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components/macro";
-import HistoryOne from "../images/img24.jpg";
-import HistoryTwo from "../images/img19.jpg";
-import HistoryThree from "../images/img23.jpg";
-import HistoryFour from "../images/img25.jpg";
-import HistoryFive from "../images/img5.jpg";
-import HistorySix from "../images/img26.jpg";
+import HistoryOne from "../images/IMG_8344.JPG";
+import HistoryTwo from "../images/IMG_8343.JPG";
+import HistoryThree from "../images/IMG_8330.JPG";
+import HistoryFour from "../images/IMG_8331.JPG";
+import HistoryFive from "../images/IMG_8325.JPG";
+import HistorySix from "../images/IMG_8324.JPG";
 import HistorySeven from "../images/img17.jpg";
 import HistoryEight from "../images/img28.jpg";
 import HistoryNine from "../images/img34.jpg";
@@ -192,8 +192,14 @@ const Image = styled.img`
     "" /* margin-bottom: 0.5rem;
   margin-top: 5rem; */
   }
-  @media screen and (max-width: 320px) {
-    padding-right: 5rem;
+  @media screen and (max-width: 375px) {
+    padding: 0 1rem;
+  }
+
+  ${
+    "" /* @media screen and (max-width: 280px) {
+    padding: 0 2.5rem;
+  } */
   }
 `;
 

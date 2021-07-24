@@ -2,12 +2,12 @@ import React from "react";
 import { IoMdArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
 import styled from "styled-components/macro";
-import HairOne from "../images/img2.jpg";
-import HairTwo from "../images/img36.jpg";
+import HairOne from "../images/img48.jpg";
+import HairTwo from "../images/img51.jpg";
 
 const Section = styled.section`
   width: 100%;
-  height: 100;
+  height: 100%;
   ${"" /* padding: 10rem calc((100vw - 1300px) / 2); */}
 
   h3 {
@@ -39,17 +39,51 @@ const InfoRow = styled.div`
   display: flex;
   flex-direction: row;
   ${"" /* padding: 1rem 0rem; */}
-  justify-content: space-around;
-  margin: 0 200px 0 200px;
+  justify-content: center;
+  ${"" /* margin: 0 200px 0 200px; */}
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    padding-right: 4rem;
   }
 `;
 const InfoWrap = styled.div`
   padding: 0rem 1rem;
   min-height: 550px;
+  min-width: 550px;
   height: 100%;
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+    padding-left: 4.5rem;
+  }
+
+  @media screen and (max-width: 540px) {
+    padding-right: 7.5rem;
+  }
+
+  @media screen and (max-width: 414px) {
+    padding-right: 10.5rem;
+    padding-left: 0rem;
+  }
+
+  @media screen and (max-width: 375px) {
+    padding-right: 13rem;
+    padding-left: 0rem;
+  }
+
+  @media screen and (max-width: 360px) {
+    padding-right: 14rem;
+    padding-left: 0rem;
+  }
+  @media screen and (max-width: 320px) {
+    padding-right: 16.25rem;
+    padding-left: 0rem;
+  }
+  @media screen and (max-width: 280px) {
+    padding-right: 18.75rem;
+    padding-left: 0rem;
+  }
 
   h2 {
     margin-bottom: 1rem;

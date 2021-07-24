@@ -27,6 +27,13 @@ const ColumnLeft = styled.div`
   justify-content: flex-start;
   padding: 1rem;
 
+  @media screen and (min-width: 1024px) {
+    iframe {
+      min-width: 200px;
+      max-width: 1000px;
+      padding-right: 4rem;
+    }
+
   @media screen and (max-width: 768px) {
     iframe {
       min-width: 200px;
@@ -70,6 +77,13 @@ const ColumnRight = styled.div`
   width: 45%;
   padding-left: 1rem;
 
+  ${
+    "" /* @media screen and (min-width: 1024px) {
+    min-width: 200px;
+    max-width: 1000px;
+  } */
+  }
+
   @media screen and (max-width: 768px) {
     height: 320px;
     top: -65px;
@@ -85,7 +99,6 @@ const Image = styled.img`
   @media screen and (max-width: 768px) {
     ${"" /* flex: 0 0 100%; */}
     max-width: 100%;
-
     margin-top: 60px;
     padding-bottom: 40px;
   }
