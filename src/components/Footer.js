@@ -159,8 +159,11 @@ const Footer = () => {
       <Container>
         <FooterTop>
           <Quote>
-            <h6>OPEN: Monday to Sunday</h6>
-            <h6>9:00am to 7:00pm</h6>
+            <h6>OPEN: Monday 1:00pm - 7:00pm</h6>
+            <h6>Tuesday to Saturday 10:00am - 7:00pm</h6>
+            <h6>
+              <h6>Sunday 11:00am - 5:00pm</h6>
+            </h6>
             <p>2928 N Broadway Los Angeles, CA 90031</p>
             <p>Call Now 323.640.0720</p>
           </Quote>

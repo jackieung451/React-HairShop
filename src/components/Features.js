@@ -22,7 +22,7 @@ const Section = styled.section`
     width: 100%;
     height: 100%;
     ${"" /* height: 190vh; */}
-    max-height: 1100px;
+    height: 100vh
     ${"" /* max-width: 100px; */}
   }
 
@@ -319,7 +319,7 @@ const Features = () => {
                 <li>Under Cut</li>
                 <li>Mid Fade Pompadour</li>
                 <div>
-                  <Button to="/contact-us">Call Now</Button>
+                  <Button to="/contact">Call Now</Button>
                 </div>
               </ul>
             </Content>
