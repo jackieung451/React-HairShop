@@ -1,9 +1,6 @@
 import React, { useState, useRef } from "react";
 import styled, { css } from "styled-components/macro";
-import { Button } from "./Button";
-import { IoMdArrowRoundForward } from "react-icons/io";
 import { IoArrowForward, IoArrowBack } from "react-icons/io5";
-import Image from "react-bootstrap/Image";
 
 const HeroSection = styled.section`
   height: 100vh;
@@ -78,7 +75,7 @@ h1{
   font-weight: 400;
   text-transform: uppercase;
   text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
-  text-align: left;
+  text-align: center;
   margin-bottom: 0.8rem;
 }
 
@@ -86,9 +83,6 @@ p{
   margin-bottom: 1.2rem;
   text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
 }
-`;
-const Arrow = styled(IoMdArrowRoundForward)`
-  margin-left: 0.5rem;
 `;
 
 const SliderButtons = styled.div`
@@ -130,20 +124,6 @@ const Hero = ({ slides }) => {
   const length = slides.length;
   const timeout = useRef(null);
 
-  // useEffect(() => {
-  //   const nextSlide = () => {
-  //     setCurrent((current) => (current === length - 1 ? 0 : current + 1));
-  //   };
-
-  //   timeout.current = setTimeout(nextSlide, 3000);
-
-  //   return function () {
-  //     if (timeout.current) {
-  //       clearTimeout(timeout.current);
-  //     }
-  //   };
-  // }, [current, length]);
-
   const nextSlide = () => {
     if (timeout.current) {
       clearTimeout(timeout.current);
@@ -177,17 +157,6 @@ const Hero = ({ slides }) => {
                   <HeroImage src={slide.image} alt={slide.alt} />
                   <HeroContent>
                     <h1>{slide.title}</h1>
-                    {/* <p>{slide.price}</p> */}
-                    {/* <Button
-                      to={slide.path}
-                      primary="true"
-                      css={`
-                        max-width: 160px;
-                      `}
-                    >
-                      {slide.label}
-                      <Arrow />
-                    </Button> */}
                   </HeroContent>
                 </HeroSlider>
               )}

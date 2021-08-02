@@ -21,9 +21,7 @@ const Section = styled.section`
     flex-direction: row;
     width: 100%;
     height: 100%;
-    ${"" /* height: 190vh; */}
-    height: 100vh
-    ${"" /* max-width: 100px; */}
+    height: 100vh;
   }
 
   @media screen and (max-width: 768px) {
@@ -52,9 +50,7 @@ const Container = styled.div`
     flex-direction: row;
     width: 100%;
     height: 100%;
-    ${"" /* height: 190vh; */}
     max-height: 1100px;
-    ${"" /* max-width: 100px; */}
   }
 
   @media screen and (max-width: 768px) {
@@ -73,22 +69,13 @@ const Wrap = styled.div`
     justify-content: center;
     width: 100%;
     height: 100%;
-    ${"" /* height: 190vh; */}
     max-height: 1100px;
-    ${"" /* max-width: 100px; */}
   }
   @media screen and (max-width: 768px) {
     max-width: 1025px;
     display: flex;
     flex-direction: column;
-
     padding-right: 0rem;
-
-    ${
-      "" /* @media screen and (max-width: 320px) {
-      padding-bottom: 8rem;
-    } */
-    }
   }
 `;
 const ColumnLeft = styled.div`
@@ -99,21 +86,13 @@ const ColumnLeft = styled.div`
   align-items: center;
   line-height: 1.4;
   padding: 0rem 2rem 0rem 2rem;
-  ${"" /* @media screen and (max-width: 768px) { */}
-  ${"" /* padding-right: 10rem; */}
-${"" /* min-height: 1200px; */}
-${"" /* padding-bottom: 10rem; */}
 
-@media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 100%;
-    ${"" /* height: 190vh; */}
     max-height: 1100px;
-    ${"" /* max-width: 100px; */}
-  }
-  @media screen and (min-width: 1024px) {
     flex: 0 0 25%;
   }
   @media screen and (max-width: 768px) {
@@ -122,23 +101,11 @@ ${"" /* padding-bottom: 10rem; */}
   @media screen and (max-width: 414px) {
     padding-top: 16rem;
   }
-  ${
-    "" /* @media screen and (max-width: 320px) {
-      padding-bottom: 8rem;
-    } */
-  }
 `;
 
 const Content = styled.div`
   flex: 0 0 50%;
   line-height: 1.8;
-
-  ${
-    "" /* @media screen and (min-width: 1024px) {
-    display: flex;
-    justify-content: center;
-  } */
-  }
 
   @media screen and (min-width: 1024px) {
     display: flex;
@@ -155,9 +122,6 @@ const Content = styled.div`
     margin-left: 0;
     padding: 0rem 35rem 0rem 0rem;
   }
-  ${"" /* max-width: 100%; */}
-  ${"" /* margin-top: 200px; */}
-  
 
   h1 {
     margin-bottom: 2rem;
@@ -192,17 +156,11 @@ const Content = styled.div`
     @media screen and (max-width: 320px) {
       margin-bottom: 0rem;
       justify-content: center;
-
       width: 570px;
       word-wrap: break-word;
     }
   }
-  ${
-    "" /* h2 {
-    display: flex;
-    justify-content: center;
-  } */
-  }
+
   div {
     display: flex;
     justify-content: center;
@@ -216,10 +174,8 @@ const Content = styled.div`
       margin-bottom: 0rem;
       justify-content: center;
       padding-right: 12rem;
-      ${"" /* padding-left: 0; */}
     }
     @media screen and (max-width: 320px) {
-      ${"" /* height: 250vh; */}
       margin-bottom: 70rem;
     }
   }
@@ -232,27 +188,10 @@ const ColumnRight = styled.div`
   height: 100%;
   width: 45%;
 
-  ${"" /* margin-bottom: 90px; */}
-
-  ${
-    "" /* @media screen and (min-width: 1024px) {
-    grid-template-columns: 1fr;
-    ${"" /* position: relative; */
-  }
-    ${
-    "" /* justify-content: center;
-    align-items: center;
-  } */
-  } 
   @media screen and (min-width: 1024px) {
     position: relative;
     flex: 0 0 75%;
-
-    ${"" /* padding-bottom: 10rem; */}
     max-width: 140px;
-    ${"" /* height: 100px; */}
-    ${"" /* top: -65px; */}
-    ${"" /* width: 70%; */}
     margin: 0rem auto;
     left: 0;
     display: flex;
@@ -260,7 +199,6 @@ const ColumnRight = styled.div`
     height: 45rem;
     max-width: 500rem;
     min-width: 35rem;
-    ${"" /* margin-bottom: 0; */}
     padding-bottom: 15rem;
   }
 
@@ -287,9 +225,7 @@ const Image = styled.img`
   width: 100%;
   object-fit: cover;
   @media screen and (max-width: 768px) {
-    ${"" /* flex: 0 0 100%; */}
     max-width: 100%;
-
     margin-top: 70px;
     padding-bottom: 40px;
   }

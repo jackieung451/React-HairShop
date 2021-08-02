@@ -6,12 +6,8 @@ import Footer from "./components/Footer";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
 import Home from "./pages";
 import About from "./pages/About";
-import Rentals from "./pages/Rentals";
-import Homes from "./pages/Homes";
 import Contact from "./pages/Contact";
 import Gallery from "./pages/Gallery";
-// import ImageSlider from "./components/ImageSlider";
-// import { SliderData } from "./data/SliderData";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +18,6 @@ function App() {
 
   return (
     <BrowserRouter>
-      {/* <ImageSlider slides={SliderData} /> */}
       <GlobalStyle />
       <Navbar toggle={toggle} />
       <Dropdown isOpen={isOpen} toggle={toggle} />

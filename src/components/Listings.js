@@ -8,7 +8,6 @@ import HairTwo from "../images/img51.jpg";
 const Section = styled.section`
   width: 100%;
   height: 100%;
-  ${"" /* padding: 10rem calc((100vw - 1300px) / 2); */}
 
   h3 {
     display: flex;
@@ -23,7 +22,6 @@ const Container = styled.div`
 `;
 const Heading = styled.div`
   font-size: 1.5rem;
-  ${"" /* padding: 2rem 1rem; */}
   margin-bottom: 40px;
 
   h1 {
@@ -38,9 +36,7 @@ const Heading = styled.div`
 const InfoRow = styled.div`
   display: flex;
   flex-direction: row;
-  ${"" /* padding: 1rem 0rem; */}
   justify-content: center;
-  ${"" /* margin: 0 200px 0 200px; */}
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -136,16 +132,7 @@ const Listings = () => {
             </InfoLink>
           </InfoWrap>
           <InfoWrap>
-            <Image
-              src={HairTwo}
-              alt="specials on makeup and hairstyles"
-              css={`
-                // margin-top: 120px;
-                @media screen and (max-width: 768px) {
-                  margin-top: 0px;
-                }
-              `}
-            />
+            <Image src={HairTwo} alt="specials on makeup and hairstyles" />
             <h2>
               Ask For Our Specials On <br />
               Makeup & Hairstyle For Any Events

@@ -53,7 +53,6 @@ const Content = styled.div`
   }
 
   h1 {
-    ${"" /* margin-bottom: 2rem; */}
     font-size: 2 rem;
     display: flex;
     justify-content: flex-start;
@@ -77,13 +76,6 @@ const ColumnRight = styled.div`
   width: 45%;
   padding-left: 1rem;
 
-  ${
-    "" /* @media screen and (min-width: 1024px) {
-    min-width: 200px;
-    max-width: 1000px;
-  } */
-  }
-
   @media screen and (max-width: 768px) {
     height: 320px;
     top: -65px;
@@ -97,7 +89,6 @@ const Image = styled.img`
   width: 100%;
   object-fit: cover;
   @media screen and (max-width: 768px) {
-    ${"" /* flex: 0 0 100%; */}
     max-width: 100%;
     margin-top: 60px;
     padding-bottom: 40px;
@@ -130,7 +121,7 @@ const ContactUs = () => {
             ></iframe>
           </ColumnLeft>
           <ColumnRight>
-            <Image src={ImageOne} alt="recruiting" />
+            <Image src={ImageOne} alt="hairstyle" />
           </ColumnRight>
         </Wrap>
       </Container>
