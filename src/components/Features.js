@@ -85,7 +85,7 @@ const ColumnLeft = styled.div`
   justify-content: center;
   align-items: center;
   line-height: 1.4;
-  padding: 3rem 2rem 0rem 2rem;
+  padding: 8rem 2rem 0rem 2rem;
 
   @media screen and (min-width: 1024px) {
     display: flex;
@@ -94,8 +94,8 @@ const ColumnLeft = styled.div`
     height: 100%;
     max-height: 1100px;
     flex: 0 0 25%;
-    padding-top: 0;
-    padding-bottom: 8rem;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
   }
   @media screen and (max-width: 768px) {
     padding-top: 27rem;
